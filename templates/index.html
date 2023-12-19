@@ -9,84 +9,65 @@
   <body>
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <img src="static/MCL.png" width="50" height="50">
         <span class="fs-4">Grant Eckett</span>
       </a>
 
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="{{url_for('index')}}" class="nav-link active" aria-current="page">Home</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Career</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="{{url_for('contact') }}" class="nav-link">Contact</a></li>
       </ul>
     </header>
     <main>
 
 <div class="px-4 pt-5 my-5 text-center border-bottom">
     <div class="col-lg-6 mx-auto">
+      <h1>Hi, I'm Grant</h1>
       <img src="static/index1.jpg" alt="Example image" width="700" height="500" loading="lazy">
-      <p class="lead mb-4">Engineer with seven years of experience in the automotive industry. A
+      <p class="lead mb-4"> I'm an Engineer with seven years of experience in the automotive industry. I'm a
 motivated individual who strives on working hard and always achieving to the best of their
-ability. Very organized and good at meeting deadlines, therefore works well under pressure as a
-team or individually.
-</p>
+ability.</p>
+      <p class="lead mb-4"> Currently, I'm self learning the Python coding language with the aim of starting
+        a career in coding.You can find the projects I've undertaken as part of my learning here.
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Contact Me</button>
+        <a href="{{url_for('contact') }}" class="nav-link"><button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Contact Me</button></a>
         <button type="button" class="btn btn-outline-secondary btn-lg px-4">View Portfolio</button>
       </div>
     </div>
-    <div class="overflow-hidden" style="max-height: 30vh;">
-      <div class="container px-5">
-      </div>
     </div>
   </div>
 
   <div class="container marketing">
   </div><!-- /.container -->
 <div class="container px-4 py-5" id="icon-grid">
-    <h2 class="pb-2 border-bottom">Overview</h2>
-
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
       <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+        <img src="static/powerbi.png" width="30" height="30">
         <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Power BI</h3>
+          <p>Experience in using Microsoft Power BI for data reporting and analysis in aid of continuous improvement.</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+        <img src="static/python.png" width="30" height="30">
         <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Python</h3>
+          <p>Can use Python to create Flask websites, command prompt scrips and GUI based programmes.</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+        <img src="static/IATF.png" width="30" height="30">
         <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">IATF Internal Auditor</h3>
+          <p>Trained in internal auditing of Total Quality System processes to IATF 16949:2016.</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
+        <img src="static/glass.png" width="30" height="30">
         <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
-        <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
-        <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Problem Solver</h3>
+          <p>Experience in solving complex engineering issues from delivering high performance vehicles to market.</p>
         </div>
       </div>
     </div>
@@ -100,8 +81,8 @@ team or individually.
     </div>
 
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="https://github.com/GEckett"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/github.png" alt="github"/></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/grant-eckett-27b59b100/"><img width="48" height="48" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin"/></a></li>
       <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
     </ul>
   </footer>
