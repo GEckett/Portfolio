@@ -1,92 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Grant Eckett - Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
-  <body>
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <img src="static/MCL.png" width="50" height="50">
-        <span class="fs-4">Grant Eckett</span>
-      </a>
-
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="{{url_for('index')}}" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
-        <li class="nav-item"><a href="{{url_for('contact') }}" class="nav-link">Contact</a></li>
-      </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant Eckett - Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Custom CSS -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Grant Eckett</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
 
-<div class="px-4 pt-5 my-5 text-center border-bottom">
-    <div class="col-lg-6 mx-auto">
-      <h1>Hi, I'm Grant</h1>
-      <img src="static/index1.jpg" alt="Example image" width="700" height="500" loading="lazy">
-      <p class="lead mb-4"> I'm an Engineer with seven years of experience in the automotive industry. I'm a
-motivated individual who strives on working hard and always achieving to the best of their
-ability.</p>
-      <p class="lead mb-4"> Currently, I'm self learning the Python coding language with the aim of starting
-        a career in coding.You can find the projects I've undertaken as part of my learning here.
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <a href="{{url_for('contact') }}" class="nav-link"><button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Contact Me</button></a>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">View Portfolio</button>
-      </div>
-    </div>
-    </div>
-  </div>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="profile-img">
+                    <img src="static/face.jfif" alt="Grant Eckett">
+                </div>
+                <div class="about-me">
+                    <p>I'm an automotive project engineer with six years of experience in the industry, specializing in project management and process optimization. Certified in Internal Auditing to IATF 16949:2016, I hold a BSc in Motorsport Technology with a 2:1 grade from Oxford Brookes University.</p>
+                    <p>At McLaren Automotive, I've played integral roles in the launch of iconic vehicle models like the McLaren 720S and 600LT. Currently serving as a Change Control Engineer, I implement change content to McLaren products through stakeholder management and process optimization, while also interpreting Power BI reports for data-driven decision-making.</p>
+                    <p>Adept at working in collaborative environments, I've volunteered with the Oxford Universities Motorsport Foundation, gaining hands-on experience in car preparation for rally and circuit competition. I'm driven by continuous learning and am currently self-teaching Python coding alongside my full-time role.</p>
+                    <p>With a keen eye for detail, strong organizational skills, and a proactive approach to problem-solving, I bring a dynamic skill set to every project I undertake.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <img src="static/project1.jpg" alt="Project 1">
+                    <h3><a href="">Space Invaders</a></h3>
+                    <p>This script is a Python implementation of the classic arcade game "Space Invaders" using the Pygame library. The game faithfully replicates the gameplay mechanics and aesthetics of the original game, providing an engaging and nostalgic experience for players.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="static/project2.jpg" alt="Project 2">
+                    <h3><a href="">PDF to Audio</a></h3>
+                    <p>A Python script designed to facilitate the conversion of PDF documents into audiobook format. The script allows users to select a PDF file using a file explorer dialog, extract text from the PDF, convert the text to speech using Google Text-to-Speech (gTTS) API, and save the resulting audio as an MP3 file. </p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="static/project3.png" alt="Project 2">
+                    <h3><a href="">Image Watermarking</a></h3>
+                    <p>A Python script built using the Tkinter library for creating a graphical user interface (GUI) and the Pillow (PIL) library for image processing. This application allows users to easily add watermarks to images and save the watermarked images.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="static/project4.jfif" alt="Project 2">
+                    <h3><a href="">Online Shop</a></h3>
+                    <p>A full-stack web application built using the Flask framework in Python. It offers a modern and user-friendly online shopping experience, allowing users to browse through a wide range of products, add items to their cart, and securely complete their purchases.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="static/project5.jpg" alt="Project 2">
+                    <h3><a href="">F1 API Website</a></h3>
+                    <p>This Flask web application utilizes the Ergast API to fetch Formula 1 race information and results based on user input.Covers the entire duration of the championship to present day.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="static/project6.png" alt="Project 2">
+                    <h3><a href="">Typing Speed Test</a></h3>
+                    <p>A Python application designed to help users improve their typing speed and accuracy. The app features a user-friendly interface built using the Tkinter library, providing a seamless typing experience.</p>
+                </div>
+                <!-- Add more portfolio items as needed -->
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me for any inquiries or collaboration opportunities.</p>
+            <form action="{{ url_for('static', filename='send_email.php') }}" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-  <div class="container marketing">
-  </div><!-- /.container -->
-<div class="container px-4 py-5" id="icon-grid">
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-      <div class="col d-flex align-items-start">
-        <img src="static/powerbi.png" width="30" height="30">
-        <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Power BI</h3>
-          <p>Experience in using Microsoft Power BI for data reporting and analysis in aid of continuous improvement.</p>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Grant Eckett. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://github.com/GEckett"><img src="https://img.icons8.com/ios-filled/50/github.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/grant-eckett-27b59b100/"><img src="https://img.icons8.com/fluency/48/linkedin.png" alt="LinkedIn"></a>
+                <!-- Add more social media icons as needed -->
+            </div>
         </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <img src="static/python.png" width="30" height="30">
-        <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Python</h3>
-          <p>Can use Python to create Flask websites, command prompt scrips and GUI based programmes.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <img src="static/IATF.png" width="30" height="30">
-        <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">IATF Internal Auditor</h3>
-          <p>Trained in internal auditing of Total Quality System processes to IATF 16949:2016.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <img src="static/glass.png" width="30" height="30">
-        <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Problem Solver</h3>
-          <p>Experience in solving complex engineering issues from delivering high performance vehicles to market.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <div class="col-md-4 d-flex align-items-center">
-      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-      </a>
-      <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Grant Eckett</span>
-    </div>
-
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-body-secondary" href="https://github.com/GEckett"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/github.png" alt="github"/></a></li>
-      <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/grant-eckett-27b59b100/"><img width="48" height="48" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin"/></a></li>
-      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-    </ul>
-  </footer>
-</main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+    </footer>
+    <!-- Custom JavaScript if needed -->
+</body>
 </html>
